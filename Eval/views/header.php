@@ -14,7 +14,9 @@
 </head>
 
 <body>
-<!-- header -->
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--header-->
+<!--------------------------------------------------------------------------------------------------------------------->
 
 <div class="container-fluid p-0 m-0">
     <!--banniere-->
@@ -35,7 +37,7 @@
         <div class="collapse navbar-collapse" id="collapsibleNav">
             <ul class="navbar-nav m-auto text-center">
                 <li class="nav-item active ">
-                    <a class="nav-link p-0" href="../index.php">Catalogue<span class="sr-only">(current)</span></a>
+                    <a class="nav-link p-0" href="list.php">Catalogue<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>

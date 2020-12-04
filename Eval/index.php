@@ -16,34 +16,19 @@
 <body>
 <!-- header -->
 
-<div class="container-fluid p-0 m-0">
+<div class="container-fluid vh-100 p-0 m-0">
     <!--banniere-->
-    <div>
-        <img class="img-fluid vw-100" src="assets/images/banniere.jpg" alt="Bannière Musique"
-             title="Bannière musique" id="banniere">
+    <div class="d-flex vh-100 justify-content-center align-items-center">
+        <img class="img-fluid w-75" src="assets/images/entrance.jpg" alt="Musique"
+             title="Musique" id="entrance">
     </div>
-    <div class="card-img-overlay text-white d-flex justify-content-center align-items-lg-end h-25" id="titreBanniere">
-        <h1 >Toute la musique</h1>
+    <div class="card-img-overlay text-center " id="CTA1">
+        <a href="views/list.php" class="btn bg-dark mt-3 text-white ">Visitez le site</a>
     </div>
 
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark p-3 ">
-        <a class="navbar-brand" href="index.php" hidden>Music.com</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNav">
-            <ul class="navbar-nav m-auto text-center">
-                <li class="nav-item active ">
-                    <a class="nav-link p-0" href="views/list.php">Catalogue<span class="sr-only">(current)</span></a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+<div>
 
-
-
-
+</div>
 <!--//$requete = $db->prepare("select * from disc where disc_id=?");-->
 <!--//$requete->execute(array($_GET["disc_id"]));-->
 <!---->

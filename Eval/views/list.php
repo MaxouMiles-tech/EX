@@ -2,12 +2,14 @@
 require_once("../controllers/listController.php");
 include('header.php');
 ?>
-
+<!--------------------------------------------------------------------------------------------------------------------->
+<!--catalogue-->
+<!--------------------------------------------------------------------------------------------------------------------->
 <div class="row mt-5 mx-auto -flex justify-content-between">
     <div class="col-6 col-md-3 h2 text-center"> Liste des disques (<?= $count; ?>)
     </div>
     <div class="col-6 col-md-2 text-center">
-        <button class="rounded bg-dark text-white text-center px-3 py-2" id="add">Ajouter</button>
+        <a href="add_form.php" class="btn bg-dark text-white text-center px-3 py-2" role="button" id="add">Ajouter</a>
     </div>
 </div>
 

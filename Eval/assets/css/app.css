@@ -14,3 +14,8 @@
 .card{
     width: 500px !important;
 }
+
+
+#CTA1{
+    top: unset !important;
+}
