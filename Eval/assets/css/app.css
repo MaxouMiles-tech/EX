@@ -19,3 +19,8 @@
 #CTA1{
     top: unset !important;
 }
+
+.btn:focus, .btn:hover, .btn:active{
+    outline: 0;
+    box-shadow: none;
+}

@@ -71,6 +71,8 @@ include('header.php');
     <a href="list.php" title="retour" role="button" class="btn btn-dark active mt-3">Retour</a>
 </form>
 
+<!-- script js -->
+<script src="../assets/js/add.js"></script>
 
 <?php
 include('footer.php');

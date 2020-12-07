@@ -12,6 +12,7 @@ include('header.php');
         <a href="add_form.php" class="btn bg-dark text-white text-center px-3 py-2" role="button" id="add">Ajouter</a>
     </div>
 </div>
+<hr>
 
 <div class="row p-5 m-auto justify-content-around">
     <?php
@@ -33,7 +34,7 @@ include('header.php');
                             <div class="card-text"><b>Genre : </b><?= $row->disc_genre ?></div>
                         </div>
 
-                        <a href="#" class="btn bg-dark mt-3 text-white align-self-end">Détails</a>
+                        <a href="details.php?id=<?= $row->disc_id ?>" class="btn bg-dark mt-3 text-white align-self-end">Détails</a>
                     </div>
                 </div>
             </div>

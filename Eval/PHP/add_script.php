@@ -1,4 +1,7 @@
 <?php
+require "../src/connexion.php"; // Inclusion de notre bibliothèque de fonctions
+$db = connexionBase(); // Appel de la fonction de connexion
+
 //---------------------------------------------------------------------------------------------------------------------
 //verification formulaire
 //---------------------------------------------------------------------------------------------------------------------
@@ -83,8 +86,8 @@ if (empty($price)) {
     echo "Le prix doit être renseignée ! <br>";
     $check = false;
 //regex pour controler le format du prix
-} else if (!preg_match('/[0-9 ]+[,.]+[0-9]{0,2}[€]{0,1}/', $price)) {
-    echo "Le prix doit comporter au moins 1 caractère numérique! <br>";
+} else if (!preg_match('/(\d+\.\d{1,2})/', $price)) {
+    echo "Le prix doit etre sous la forme XX.XX! <br>";
     $check = false;
 }
 
