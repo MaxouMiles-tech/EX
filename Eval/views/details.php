@@ -22,7 +22,7 @@ include('header.php');
         <div class="d-flex flex-column justify-content-end">
             <a href="list.php" title="retour" role="button" class="btn btn-dark active mt-3">Retour</a>
             <a href="update_form.php?id= <?= $disc_id ?>" class="btn btn-warning mt-3">Modifier</a>
-            <a href=javascript:void(0) role="button" onclick="confirmation(<?php echo $disc_id; ?>)"
+            <a href=javascript:void(0) role="button" onclick="confirmation(<?php echo $disc_id ?>)"
                class="btn btn-danger mt-3">Supprimer</a>
         </div>
     </div>
