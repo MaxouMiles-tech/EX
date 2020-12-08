@@ -19,19 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43eb556-5217-428e-ba08-7929b6da6fd8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Eval/PHP/add_script.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/assets/images/entrance.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/assets/images/entrance1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/assets/images/téléchargement.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/assets/images/téléchargement.jpg'" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/controllers/addController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eval/views/add_form.php" afterDir="false" />
+    <list default="true" id="b43eb556-5217-428e-ba08-7929b6da6fd8" name="Default Changelist" comment="modif et suppression">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/assets/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/assets/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/views/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/views/list.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/PHP/update_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/PHP/update_script.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/controllers/updateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/controllers/updateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/views/add_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/add_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/views/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/details.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/views/update_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/update_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,6 +95,7 @@
       <workItem from="1606999349515" duration="10242000" />
       <workItem from="1607010886182" duration="38000" />
       <workItem from="1607067633531" duration="12477000" />
+      <workItem from="1607412908354" duration="14591000" />
     </task>
     <servers />
   </component>
@@ -135,10 +130,11 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="432" y="183" key="#com.intellij.execution.impl.EditConfigurationsDialog/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1606999590079" />
-    <state x="620" y="279" key="FileChooserDialogImpl" timestamp="1607068906846">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state x="2389" y="251" key="FileChooserDialogImpl" timestamp="1607412947236">
+      <screen x="1680" y="-36" width="1920" height="1080" />
     </state>
     <state x="620" y="279" key="FileChooserDialogImpl/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607068906846" />
+    <state x="2389" y="251" key="FileChooserDialogImpl/1680.-36.1920.1080/0.0.1680.1050@1680.-36.1920.1080" timestamp="1607412947236" />
     <state x="716" y="426" key="Github.ShareDialog" timestamp="1607010495341">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -175,17 +171,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="518" height="446" key="SwitcherDM/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607077009637" />
-    <state x="432" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607010602976">
+    <state x="432" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607356943567">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="432" y="253" key="Vcs.Push.Dialog.v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607010602976" />
+    <state x="432" y="253" key="Vcs.Push.Dialog.v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607356943567" />
     <state x="734" y="434" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1607078079081">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="734" y="434" key="com.intellij.database.run.ParametersPanel.Standalone/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607078079081" />
-    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607010893115">
+    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607412928365">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607010893115" />
+    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607412928365" />
   </component>
 </project>

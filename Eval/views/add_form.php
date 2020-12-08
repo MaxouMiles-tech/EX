@@ -2,6 +2,7 @@
 require_once("../controllers/addController.php");
 include('header.php');
 ?>
+
 <!--------------------------------------------------------------------------------------------------------------------->
 <!--formulaire-->
 <!--------------------------------------------------------------------------------------------------------------------->
@@ -26,7 +27,7 @@ include('header.php');
             <option value=""></option>
             <?php
             // liste déroulante pour afficher les artistes existants
-            while ($artist = $result->fetch(PDO::FETCH_OBJ)) {
+            while ($artist = $result2->fetch(PDO::FETCH_OBJ)) {
                 echo '<option value="' . $artist->artist_id . '">' . $artist->artist_name . '</option>';
             }
             ?>
