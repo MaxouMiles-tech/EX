@@ -19,12 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b43eb556-5217-428e-ba08-7929b6da6fd8" name="Default Changelist" comment="modif et suppression">
+    <list default="true" id="b43eb556-5217-428e-ba08-7929b6da6fd8" name="Default Changelist" comment="modif php">
+      <change afterPath="$PROJECT_DIR$/Eval/assets/js/update.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/PHP/add_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/PHP/add_script.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eval/PHP/update_script.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/PHP/update_script.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/controllers/updateController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/controllers/updateController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eval/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eval/views/add_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/add_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eval/views/details.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/details.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eval/views/update_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/Eval/views/update_form.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -39,6 +40,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -60,7 +62,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../BoussoufZohraCV" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.stylelint" value="project" />
@@ -95,8 +97,18 @@
       <workItem from="1606999349515" duration="10242000" />
       <workItem from="1607010886182" duration="38000" />
       <workItem from="1607067633531" duration="12477000" />
-      <workItem from="1607412908354" duration="14591000" />
+      <workItem from="1607412908354" duration="14889000" />
+      <workItem from="1607501906255" duration="7337000" />
+      <workItem from="1607596703270" duration="5365000" />
     </task>
+    <task id="LOCAL-00001" summary="modif php">
+      <created>1607442431348</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607442431348</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +128,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="modif php" />
+    <option name="LAST_COMMIT_MESSAGE" value="modif php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="559" y="76" key="#PHP" timestamp="1606993461601">
@@ -171,17 +185,17 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state width="518" height="446" key="SwitcherDM/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607077009637" />
-    <state x="432" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607356943567">
+    <state x="432" y="253" key="Vcs.Push.Dialog.v2" timestamp="1607442436929">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="432" y="253" key="Vcs.Push.Dialog.v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607356943567" />
+    <state x="432" y="253" key="Vcs.Push.Dialog.v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607442436929" />
     <state x="734" y="434" key="com.intellij.database.run.ParametersPanel.Standalone" timestamp="1607078079081">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="734" y="434" key="com.intellij.database.run.ParametersPanel.Standalone/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607078079081" />
-    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607412928365">
+    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607501927748">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607412928365" />
+    <state x="657" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.-36.1920.1080/0.0.1680.1050@0.0.1680.1050" timestamp="1607501927748" />
   </component>
 </project>

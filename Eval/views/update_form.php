@@ -20,9 +20,8 @@ include('header.php');
 
 <!-- formulaire de modification  -->
 <!-- debut du formulaire : redirection vers le script php -->
-<!-- utilisation de enctype pour le chargement de l'image  -->
-<form action="../PHP/update_script.php" method="POST" id="updateform"
-      name="updateform" enctype="multipart/form-data" class="px-5">
+<!-- utilisation de enctype pour le chargement de l'image    ../PHP/update_script.php-->
+<form action="../PHP/update_script.php" method="POST" id="updateform" name="updateform" enctype="multipart/form-data" class="px-5">
 
     <!-- input invisible pour recuperer les informations de la base -->
     <input type="hidden" class="form-control" value="<?php echo $photo; ?>" name="photo" id="photo">
@@ -32,6 +31,7 @@ include('header.php');
         <label for="title">Titre : </label>
         <input type="text" class="form-control" value="<?php echo $title ?>" id="title" name="title">
     </div>
+    <p id="errorTitle" class="text-danger"></p>
 
     <div class="form-group">
         <?php
@@ -65,34 +65,48 @@ include('header.php');
             ?>
         </select>
     </div>
+    <p id="errorArtist" class="text-danger"></p>
+
     <div class=" form-group">
         <label for="year">Année : </label>
         <input type="text" class="form-control" value="<?php echo $year ?>" id="year" name="year">
     </div>
+    <p id="errorYear" class="text-danger"></p>
 
     <div class=" form-group">
         <label for="genre">Genre : </label>
         <input class="form-control overflow-auto" value="<?php echo $genre ?>" id="genre" name="genre">
     </div>
+    <p id="errorGenre" class="text-danger"></p>
 
     <div class="form-group">
         <label for="label">Label : </label>
         <input class="form-control overflow-auto" value="<?php echo $label ?>" id="label" name="label">
     </div>
+    <p id="errorLabel" class="text-danger"></p>
 
     <div class="form-group">
         <label for="price">Prix : </label>
         <input type="text" class="form-control" value="<?php echo $price; ?>" id="price" name="price">
     </div>
+    <p id="errorPrice" class="text-danger"></p>
 
     <div class="form-group pt-3">
         <label for="photo">Télécharger la photo du disque :</label><br>
         <input type="file" name="photo"><br>
     </div>
+    <p id="errorPhoto" class="text-danger"></p>
 
     <!-- bouttons -->
     <div class="pb-5">
-        <a href="details.php?id=<?= $disc_id?>" title="retour" role="button" class="btn btn-dark active mt-3">Retour</a>
-        <button type="submit" role="button" class="btn btn-warning mt-3">Envoyer</button>
+        <a href="details.php?id=<?= $disc_id?>" title="retour" role="button" class="btn btn-dark active mr-3 mt-3">Retour</a>
+        <button id="submit" name="submit" type="submit" role="button" class="btn btn-warning mt-3">Envoyer</button>
     </div>
 </form>
+
+<!-- script js -->
+<script src="../assets/js/update.js"></script>
+
+<?php
+include('footer.php');
+?>

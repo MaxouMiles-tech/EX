@@ -6,9 +6,12 @@ include('header.php');
 <!--------------------------------------------------------------------------------------------------------------------->
 <!--formulaire-->
 <!--------------------------------------------------------------------------------------------------------------------->
-<div class="row mt-3 mb-1 mx-0">
-    <div class="col h2 p-3 text-center">Ajouter un vinyle</div>
+<!-- titre de la page  -->
+<div class="row mt-5 mx-auto -flex justify-content-between">
+    <div class="col-6 col-md-3 h2 text-center">Ajouter un vinyle
+    </div>
 </div>
+<hr>
 <!-- formulaire d'ajout d'un produit -->
 <!-- debut du formulaire : redirection vers le script php -->
 <!-- utilisation de enctype pour le chargement de l'image  -->
@@ -24,10 +27,10 @@ include('header.php');
     <div class="form-group">
         <label for="artist">Artiste : </label>
         <select class="form-control" required name="artist" id="artist">
-            <option value=""></option>
+            <option selected>Sélectionner un artiste</option>
             <?php
             // liste déroulante pour afficher les artistes existants
-            while ($artist = $result2->fetch(PDO::FETCH_OBJ)) {
+            while ($artist = $result->fetch(PDO::FETCH_OBJ)) {
                 echo '<option value="' . $artist->artist_id . '">' . $artist->artist_name . '</option>';
             }
             ?>
@@ -51,7 +54,7 @@ include('header.php');
     <div class="form-group">
         <label for="label">Label : </label>
         <input type="text" class="form-control" name="label" id="label"
-               placeholder="Entrez le label 'EMI, Warmer, PolyGram, Univers sale ...)">
+               placeholder="Entrez le label (EMI, Warmer, PolyGram, Univers sale ...)">
     </div>
     <p id="errorLabel" class="text-danger"></p>
 
@@ -68,7 +71,7 @@ include('header.php');
     <p id="errorPhoto" class="text-danger"></p>
 
     <!-- bouttons -->
-    <button type="submit" class="btn btn-warning mt-3">Ajouter</button>
+    <button type="submit" id="submit" name="submit" class="btn btn-warning mt-3 mr-3">Ajouter</button>
     <a href="list.php" title="retour" role="button" class="btn btn-dark active mt-3">Retour</a>
 </form>
 

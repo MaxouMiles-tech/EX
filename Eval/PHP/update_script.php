@@ -5,39 +5,6 @@ $db = connexionBase(); // Appel de la fonction de connexion
 //---------------------------------------------------------------------------------------------------------------------
 //verification formulaire
 //---------------------------------------------------------------------------------------------------------------------
-// declaration de variable qui recupere les valeurs du formulaire
-if (isset($_POST['id'])) {
-    $id =$_POST['id'];
-}
-
-if (isset($_POST['title'])) {
-    $title = $_POST['title'];
-}
-
-if (isset($_POST['artist'])) {
-    $artist = $_POST['artist'];
-}
-
-if (isset($_POST['year'])) {
-    $year = $_POST['year'];
-}
-
-if (isset($_POST['genre'])) {
-    $genre = $_POST['genre'];
-}
-
-if (isset($_POST['label'])) {
-    $label = $_POST['label'];
-}
-
-if (isset($_POST['price'])) {
-    $price = $_POST['price'];
-}
-
-if (isset($_POST['photo'])) {
-    $photo = $_POST['photo'];
-}
-
 //variable necessaire à la validation du formulaire
 $check = true;
 
@@ -66,35 +33,61 @@ if (!empty($_FILES["photo"]["name"])) {
     }
 }
 
-
 //validation des champs necessaires du formulaire
 //ces champs ne doivent pas etre vide sinon renvoie false ce qui empeche l'envoi du formulaire
-if (empty($title)) {
+$filtreText = '/^[\w\s]+$/';
+$filtreAnnee = '/^[012][0-9]{3}$/';
+$filtrePrice = '/(\d+\.\d{1,2})/';
+
+if (isset($_POST['submit'])) {
+
+    if (!empty($_POST['id'])) {
+        $id =$_POST['id'];
+    }
+
+    if (!empty($_POST['photo'])) {
+        $photo = $_POST['photo'];
+    }
+
+    if (!empty($_POST['title']) && preg_match($filtreText, $_POST['title'])) {
+        $title = $_POST['title'];
+    }
+} else {
     echo "Le titre doit être renseignée ! <br>";
     $check = false;
 }
-if (empty($artist)) {
-    echo "L'artiste doit être renseigné ! <br>";
+
+if (!empty($_POST['artist'])) {
+    $artist = $_POST['artist'];
+} else {
+    echo "L'artiste doit être renseignée ! <br>";
     $check = false;
 }
-if (empty($year)) {
+
+if (!empty($_POST['year']) && preg_match($filtreAnnee, $_POST['year'])) {
+    $year = $_POST['year'];
+} else {
     echo "L'année doit être renseignée ! <br>";
     $check = false;
 }
-if (empty($genre)) {
+
+if (!empty($_POST['genre']) && preg_match($filtreText, $_POST['genre'])) {
+    $genre = $_POST['genre'];
+} else {
     echo "Le genre doit être renseignée ! <br>";
     $check = false;
 }
-if (empty($label)) {
+
+if (!empty($_POST['label']) && preg_match($filtreText, $_POST['label'])) {
+    $label = $_POST['label'];
+} else {
     echo "Le label doit être renseignée ! <br>";
     $check = false;
 }
 
-if (empty($price)) {
-    echo "Le prix doit être renseignée ! <br>";
-    $check = false;
-//regex pour controler le format du prix
-} else if (!preg_match('/(\d+\.\d{1,2})/', $price)) {
+if (!empty($_POST['price']) && preg_match($filtrePrice, $_POST['price'])) {
+    $price = $_POST['price'];
+} else {
     echo "Le prix doit etre sous la forme XX.XX! <br>";
     $check = false;
 }
@@ -112,11 +105,11 @@ if ($check) {
     $stmt->bindParam(":label", $label, PDO::PARAM_STR);
     $stmt->bindParam(":genre", $genre, PDO::PARAM_STR);
     $stmt->bindParam(":price", $price, PDO::PARAM_INT);
-    $stmt->bindParam(":artist", $artist, PDO::PARAM_INT);
+    $stmt->bindParam(":artist", $artist, PDO::PARAM_STR);
 
     $stmt->execute();
 
-    die('ok');
+
 //redirection vers la page du catalogue
     header("Location:../views/list.php");
 }
